@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    list-style-type: none;/* شيلت النقط ال جنب ال list*/
+    display: inline-block;/* انهم بدل ما كانو تحت بعض خلتهم جنب بعض*/
+}
+nav ul li {
+    display: inline-block;/* انهم بدل ما كانو تحت بعض خلتهم جنب بعض*/
+    margin: 20px;/*وخليت في مساحة بينهم */
+}
+a {
+    text-decoration: none;/*شيلت الخط ال تحت الكلمة*/
+    color: black;
+}
+.container {/*ده يعتبر تظبيط الصفحة كلها*/
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img {
+    padding: 50px 0;
+    max-width: 100%;
+}
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+}
+.btn {/* خطوات تزين الbotton*/ 
+    color: black;
+    background: #ff523b;/*شكل الخلفية بتاعت الزرار*/
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;/* دي بتعمل التموج بتاع الزرار*/
+    transition: 0.7s ease;/*علشان تخلي الزرار يعمل effect */
+}
+.btn:hover {
+    transform: scale(1.1);/*علشان الزرار يعمل effect*/
+}
+p {
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+.header {
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.log {
+    background-color: #ff523b;
+    border-radius: 30px;
+    padding: 8px 30px;
+    transition: 0.7s ease;
+}
+.log:hover {
+    transform: scale(1.1);
+}
+.header .row {
+    margin-top: 70px;/* نزل بي الصورة والكلام لتحت شوية*/
+}
+.categories .row {
+    margin: 70px 0;
+}
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;/*علشان تخلي الصور جنب بعض*/
+}
+.col-3 img {
+    width: 100%;/*علشان اخلي الصور تبعد عن بعض وياخدوا عرض الصفحة كلها*/
+    
+    
+}
+.small-container {
+    max-width: 1080px;/*علشان تصغرهم شوية في الصفحة*/
+    margin: auto; /*علشان اي تغير في عرض الصفحة هو تلقائي يغيره*/
+    padding-left: 25px;/*علشان انا مش محتاج احركهم فوق وتحت */
+    padding-right: 25px;
+}
+.col-4 {
+    flex-basis: 25px;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img {
+    width: 100%;
+    
+}
+.title {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+    line-height: 60px;
+}
+h4 {
+    font-weight: normal;
+    color: #555;
+}
+.col-4 p {
+    font-size: 14px;
+}
+.col-4:hover {
+    transform: translateY(-5px);
+}
